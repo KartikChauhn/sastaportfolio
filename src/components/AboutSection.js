@@ -1,5 +1,6 @@
 import home1 from '../img/home1.png'
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import {About,Description,Hide,Image} from '../styles.js';
 
 const AboutSection = ()=>{
     return (
@@ -31,33 +32,6 @@ const AboutSection = ()=>{
 }
 
 //styles
-const About = styled.div`
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 2rem;
-    margin: 2rem 5rem;
-    color: white; 
-`
 
-const Description = styled.div`
-    padding-right: 5rem;
-    h2{
-        font-weight: lighter;
-    }
-`
-
-const Hide = styled.div`
-    overflow: hidden;
-`
-
-const Image = styled.div`
-    overflow: hidden;
-    img{
-        width: 90%;
-        height: 90%;
-    }
-`
 
 export default AboutSection;

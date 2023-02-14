@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
 
     h2{
         font-weight: lighter;
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
     h3{
         color:white
