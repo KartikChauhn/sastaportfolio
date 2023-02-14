@@ -13,13 +13,14 @@ const GlobalStyles = createGlobalStyle`
     }
     button{
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         cursor: pointer;
-        padding: 1rem 2rem;
-        border: 3px solid #23d997;
+        padding: 0.8rem 1.4rem;
+        border: 2px solid #23d997;
         background: transparent;
         color: white;
         transition: all 0.5s ease;
+        border-radius: 4px;
         &:hover{
             background-color: #23d997;
 

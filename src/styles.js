@@ -24,7 +24,7 @@ export const Hide = styled.div`
 export const Image = styled.div`
     overflow: hidden;
     img{
-        width: 90%;
-        height: 90%;
+        width: 85%;
+        height: 85%;
     }
 `
