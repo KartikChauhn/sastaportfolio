@@ -35,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
     }
     h4{
         font-weight: bold;
+        font-size: 2rem;
     }
     p{
         padding: 3rem 0rem;
