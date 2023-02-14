@@ -1,7 +1,10 @@
+import Aboutus from "./pages/Aboutus";
 
 function App() {
   return (
-    <h1>Kartik is back</h1>
+    <div>
+      <Aboutus/>
+    </div>
   );
 }
 
