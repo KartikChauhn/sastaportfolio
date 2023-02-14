@@ -1,35 +1,63 @@
 import home1 from '../img/home1.png'
-
+import styled from 'styled-components';
 
 const AboutSection = ()=>{
     return (
-        <div className="">
-            <div className="description">
+        <About>
+            <Description>
                 <div className="title">
-                    <div className="hide">
+                    <Hide>
                         <h2>Hello there, Welcome.</h2>
-                    </div>
-                    <div className="hide">
-                        <h2>We push your <span>dream</span> Buisness</h2>
-                    </div>
-                    <div className="hide">
+                    </Hide>
+                    <Hide>
+                        <h2>We <span>push</span> your  Buisness</h2>
+                    </Hide>
+                    <Hide>
                         <h2>Marketing</h2>
-                    </div>
-                    <div className="">
-                        <p>
-                            We can do what you have imagined to do for yourself. We let know the world your buisness and your ideas. Let us put wings so that it can fly.
-                        </p>
-                        <button>Contact us</button>
-                    </div>
-                    <div className="image">
-                        <img src={home1} alt="Basics" />
-                    </div>
-
-
+                    </Hide>
                 </div>
-            </div>
-        </div>
+                    <p>
+                        We can do what you have imagined to do for yourself. We let know the world your buisness and your ideas. Let us put wings so that it can fly.
+                    </p>
+                    <button>Contact us</button>              
+                        
+                
+            </Description>    
+            <Image>
+                <img src={home1} alt="Basics" />
+            </Image>
+        </About>
     )
 }
+
+//styles
+const About = styled.div`
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    margin: 2rem 5rem;
+    color: white; 
+`
+
+const Description = styled.div`
+    padding-right: 5rem;
+    h2{
+        font-weight: lighter;
+    }
+`
+
+const Hide = styled.div`
+    overflow: hidden;
+`
+
+const Image = styled.div`
+    overflow: hidden;
+    img{
+        width: 90%;
+        height: 90%;
+    }
+`
 
 export default AboutSection;
