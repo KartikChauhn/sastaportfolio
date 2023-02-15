@@ -4,12 +4,18 @@ import styled from "styled-components";
 import { useLocation} from "react-router-dom";
 import {MovieState} from '../Moviestate';
 
+
+//animation imports 
+import { pageAnimation } from "../animation";
+import { motion } from "framer-motion";
+
 const Moviedetail = () =>{
     
     const location = useLocation();
     const url = location.pathname;
     const [movies,setMovies] = useState(MovieState);
     const[movie, setMovie] = useState();
+
     
     useEffect(()=>{
         const currentMovie = movies.filter((statemovie)=> statemovie.url === url);
@@ -19,7 +25,7 @@ const Moviedetail = () =>{
     return(
         <>
         {movie && (
-            <Details>
+            <Details exit='exit' variants={pageAnimation} initial='hidden' animate='show'>
                 <Headline>
                     <h2>{movie.title}</h2>
                     <img src={movie.mainImg} alt="movie" />
@@ -45,7 +51,7 @@ const Moviedetail = () =>{
 };
 
 
-const Details = styled.div`
+const Details = styled(motion.div)`
     color: white;
 `
 
